@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">City Weather</string>
+    <string name="str_search">search</string>
+    <string name="str_city">City :</string>
+    <string name="str_geoname_id">GeonameId :</string>
+    <string name="str_latitude">Latitude :</string>
+    <string name="str_longtitude">Longtitude :</string>
+    <string name="str_population">Population :</string>
+    <string name="str_wiki">wikipedia</string>
+    <string name="str_weather">weather</string>
+    <string name="str_images">images</string>
+    <string name="str_maps">maps</string>
+    <string name="API_KEY">AIzaSyCxkzvIp18E84InGCt5mzvrfuP80ipp6WI</string>
+</resources>

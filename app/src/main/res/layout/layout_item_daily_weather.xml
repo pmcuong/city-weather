@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="dailyWeather"
+            type="com.example.cityweather.model.DailyWeatherModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/tv_dayOfWeek"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@{dailyWeather.dayOfWeek}" />
+
+        <ImageView
+            android:id="@+id/iv_status"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/tv_min_temperature"
+            android:layout_toRightOf="@id/tv_dayOfWeek" />
+
+        <TextView
+            android:id="@+id/tv_min_temperature"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@+id/tv_max_temperature"
+            android:text="@{dailyWeather.minTemperature}"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_max_temperature"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:text="@{dailyWeather.maxTemperature}"
+            android:gravity="center_vertical"/>
+    </RelativeLayout>
+</layout>
